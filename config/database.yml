@@ -16,7 +16,7 @@ development:
   adapter:  postgresql
   host:     localhost
   encoding: unicode
-  database: shopmatic-world_development
+  database: shopmaticworld
   pool:     5
   username: shopmaticworld
   password: shopmaticworld

@@ -1,0 +1,48 @@
+.navbar {
+	background: $primary-color;
+	height: 60px;
+	@include small-mobile {
+		height: auto;
+	  }
+	.shopmatic-world {
+		height: 30px;
+		width: 206px;
+		color: #FFFFFF;
+		font-size: 30px;
+		font-weight: 300;
+		letter-spacing: -1px;
+		line-height: 30px;
+		.shopmatic {
+			font-weight: 600;
+		}
+	}
+	.search-bar {
+		width: 504px;
+		input {
+			height: 45px;
+			border: none;
+			&:focus {
+				outline: none;
+    		box-shadow: none;
+    		border: none;
+			}
+		}
+		.fa-search {
+			position: absolute;
+			right: 5px;
+			padding: 10px 15px;
+			background: $primary-color;
+			top: 5px;
+			width: 46px;
+			color: #fff;
+			z-index: 999;
+			cursor: pointer;
+		}
+	}
+	.start-shop {
+		height: 21px;
+		color: #FFFFFF;
+		font-size: 16px;
+		line-height: 21px;
+	}
+}

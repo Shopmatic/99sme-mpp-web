@@ -1,0 +1,49 @@
+header {
+	max-width: 1177px;
+	padding: 0;
+	margin: 30px auto;
+	.cover-image {
+		position: relative;
+		.banner {
+			height: 21vw;
+		}
+		.store-img {
+			img {
+				position: absolute;
+				height: 150px;
+				background: #fff;
+				border: 5px solid #ebebeb;
+				border-radius: 5px;
+				bottom: -35px;
+				margin-left: -6em;
+			}
+		}
+	}
+	.about-us {
+		max-width: 835px;
+		text-align: center;
+		margin: 60px auto 35px;
+		h1 {
+			color: #000000;
+			font-size: 26px;
+			line-height: 34px;
+			text-align: center;
+			font-weight: normal;
+			text-shadow: 0 1px 4px 0 #8FB8B8;
+		}
+		p {
+			color: #555555;
+			font-size: 16px;
+			line-height: 24px;
+			text-align: center;
+			text-shadow: 0 1px 4px 0 rgba(0,0,0,0.29);
+		}
+		.visit-store {
+			height: 40px;
+			width: 131px;
+			border: 1px solid #D1D1D1;
+			border-radius: 5px;
+			padding: 12px 20px;
+		}
+	}
+}
