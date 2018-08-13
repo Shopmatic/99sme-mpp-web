@@ -54,7 +54,7 @@ production:
   adapter:  postgresql
   host:     localhost
   encoding: unicode
-  database: shopmatic-world_production
+  database: shopmatic-world
   pool:     5
   username: shopmaticworld
   password: shopmaticworld
