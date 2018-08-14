@@ -1,3 +1,36 @@
 // Place all the styles related to the store controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.store {
+  .products {
+    .product {
+      height: 358px;
+      width: 275px;
+      border-radius: 5px;
+      background-color: #FFFFFF;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+      margin: 0 0 27px;
+      cursor: pointer;
+      img {
+        margin-bottom: 15px;
+      }
+      .name {
+        color: #444444;
+        font-size: 15px;
+        line-height: 18px;
+        text-shadow: 0 1px 4px 0 rgba(0,0,0,0.29);
+        margin-left: 15px;
+        margin-bottom: 10px;
+      }
+      .price {
+        color: #000000;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 22px;
+        text-shadow: 0 1px 4px 0 rgba(0,0,0,0.29);
+        margin-left: 15px;
+      }
+    }
+  }
+}
+@import "product_popup";
