@@ -4,7 +4,7 @@ class StoreController < ApplicationController
     store_name = params[:name]
     @merchant = Merchants.find_by_canonical_name(store_name)
     render_404 and return if @merchant.nil?
-    @products = Products.find_by_merchant_id(@merchant.id)
+    @products = Products.where(merchant_id: @merchant.id)
   end
 
   def render_404

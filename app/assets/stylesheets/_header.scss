@@ -5,6 +5,9 @@ header {
 		position: relative;
 		.banner {
 			height: 21vw;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
 		}
 		.store-img {
 			img {
