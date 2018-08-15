@@ -4,12 +4,12 @@
 .store {
   .products {
     .product {
-      height: 358px;
       width: 275px;
       border-radius: 5px;
       background-color: #FFFFFF;
       box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
       margin: 0 0 27px;
+      padding-bottom: 1px;
       cursor: pointer;
       img {
         margin-bottom: 15px;
@@ -18,9 +18,9 @@
         color: #444444;
         font-size: 15px;
         line-height: 18px;
-        text-shadow: 0 1px 4px 0 rgba(0,0,0,0.29);
-        margin-left: 15px;
+        text-shadow: 0 1px 4px 0 rgba(0,0,0,0.29);        
         margin-bottom: 10px;
+        padding: 0 16px;
       }
       .price {
         color: #000000;
@@ -28,7 +28,7 @@
         font-weight: 500;
         line-height: 22px;
         text-shadow: 0 1px 4px 0 rgba(0,0,0,0.29);
-        margin-left: 15px;
+        padding: 0 16px;
       }
     }
   }
