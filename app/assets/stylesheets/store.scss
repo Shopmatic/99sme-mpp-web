@@ -4,7 +4,7 @@
 .store {
   .products {
     .product {
-      width: 275px;
+      width: 270px;
       border-radius: 5px;
       background-color: #FFFFFF;
       box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
@@ -12,7 +12,8 @@
       padding-bottom: 1px;
       cursor: pointer;
       img {
-        margin-bottom: 15px;
+        margin-bottom: 16px;
+        border-radius: $image-radius;
       }
       .name {
         color: #444444;
