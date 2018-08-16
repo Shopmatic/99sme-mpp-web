@@ -17,7 +17,7 @@
           <p class="description"><%=product.description%></p>
           <p class="quantity">Quantity</p>
           <div class="price-block">            
-            <%= link_to "Buy", "/redirect_to_store.html?url=#{@merchant.product_url}/#{product.slug}&store=#{@merchant.name}", :class => "btn buy-btn", :target => "_blank"%>
+            <%= link_to "Buy", "/redirect_to_store.html?url=https://#{@merchant.canonical_name}.myshopmatic.com/#{product.slug}&store=#{@merchant.name}", :class => "btn buy-btn", :target => "_blank"%>
            </div>
         </div>
       </div>
