@@ -18,7 +18,7 @@
           <p class="quantity">Quantity</p>
           <div class="price-block">            
             <input class="form-control" type="number" value="<%=product.stock_sum%>" id="example-number-input">
-            <button class="btn buy-btn"><a href="#">Buy now</a></button>
+            <button class="btn buy-btn"><a target="_blank" href="https://<%=@merchant.canonical_name%>.myshopmatic.com/products/<%=product.slug%>">Buy now</a></button>
           </div>
         </div>
       </div>
