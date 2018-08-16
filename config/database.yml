@@ -14,7 +14,8 @@
 #
 development:
   adapter:  postgresql
-  host:     localhost
+  host:     dev.goshopmatic.com
+  port:     5432
   encoding: unicode
   database: shopmaticworld
   pool:     5
