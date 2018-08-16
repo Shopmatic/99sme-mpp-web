@@ -17,9 +17,8 @@
           <p class="description"><%=product.description%></p>
           <p class="quantity">Quantity</p>
           <div class="price-block">            
-            <input class="form-control" type="number" value="<%=product.stock_sum%>" id="example-number-input">
-            <button class="btn buy-btn"><a target="_blank" href="https://<%=@merchant.canonical_name%>.myshopmatic.com/products/<%=product.slug%>">Buy now</a></button>
-          </div>
+            <%= link_to "Buy", "/redirect_to_store.html?url=#{@merchant.product_url}/#{product.slug}&store=#{@merchant.name}", :class => "btn buy-btn", :target => "_blank"%>
+           </div>
         </div>
       </div>
       <p style="margin: 35px 0 15px 0px;">You might also like</p>
