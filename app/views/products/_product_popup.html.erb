@@ -41,7 +41,7 @@
 
 <%= javascript_tag do %>  
   $(document).ready(function() {
-    $('#span-<%= product.id%>').zoom();     
+    $('#span-<%= product.id%>').zoom();
     $(this).keydown(function(event){
       if (event.keyCode == 27) { 
         $('#close-<%= product.id%>').click();

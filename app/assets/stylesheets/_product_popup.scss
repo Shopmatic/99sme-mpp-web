@@ -9,6 +9,9 @@
         border-radius: 5px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);        
       }
+      .zoom {
+        display: inline-block;
+      }
       .zoomImg {
         &:hover {
           cursor: zoom-in;
@@ -93,14 +96,3 @@
     font-size: 30px;
   }
 }
-
-.zoom {
-  display:inline-block;
-  position: relative;
-}
-
-.zoom img {
-  display: block;
-}
-
-.zoom img::selection { background-color: transparent; }
