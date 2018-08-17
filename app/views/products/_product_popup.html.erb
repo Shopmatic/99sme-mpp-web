@@ -7,10 +7,10 @@
         <div class="left-section col-md-6">
           <img class="primary-img" alt="img" src="<%= product.image_1%>" />
           <div class="thumbnails">
-            <img src="<%=(p.image_1.include? "cdn.myshopmatic.com")  ? p.image_1.sub(/(.*)\b.\b/i, '\1_t.') : p.image_1%>" width="70">
-            <img src="<%=(p.image_2.include? "cdn.myshopmatic.com")  ? p.image_2.sub(/(.*)\b.\b/i, '\1_m.') : p.image_2%>" width="70">
-            <img src="<%=(p.image_3.include? "cdn.myshopmatic.com")  ? p.image_3.sub(/(.*)\b.\b/i, '\1_m.') : p.image_3%>" width="70">
-            <img src="<%=(p.image_4.include? "cdn.myshopmatic.com")  ? p.image_4.sub(/(.*)\b.\b/i, '\1_m.') : p.image_4%>" width="70">
+            <img src="<%=(!(p.image_1.blank?) && (p.image_1.include? "cdn.myshopmatic.com"))  ? p.image_1.sub(/(.*)\b.\b/i, '\1_t.') : p.image_1%>" width="70">
+            <img src="<%=(!(p.image_2.blank?) && (p.image_2.include? "cdn.myshopmatic.com"))  ? p.image_2.sub(/(.*)\b.\b/i, '\1_t.') : p.image_2%>" width="70">
+            <img src="<%=(!(p.image_3.blank?) && (p.image_3.include? "cdn.myshopmatic.com"))  ? p.image_3.sub(/(.*)\b.\b/i, '\1_t.') : p.image_3%>" width="70">
+            <img src="<%=(!(p.image_4.blank?) && (p.image_4.include? "cdn.myshopmatic.com"))  ? p.image_4.sub(/(.*)\b.\b/i, '\1_t.') : p.image_4%>" width="70">
           </div>
         </div>        
         <div class="right-section col-md-6">
