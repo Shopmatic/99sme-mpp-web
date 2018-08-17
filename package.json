@@ -1,5 +1,7 @@
 {
   "name": "shopmatic-world",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "jquery-zoom": "^1.7.21"
+  }
 }
