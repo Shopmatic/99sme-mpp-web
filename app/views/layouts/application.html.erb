@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "Shopmatic World" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Shopmatic World" %>">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn.goshopmatic.com/in/assets/img/1.0.2/favicon.png">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
     <link href="/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -17,10 +18,10 @@
   </head>
   <body>
       <%= render 'layouts/navigation' %>      
-    <main role="main">
-       <%= render 'layouts/messages' %>
+    <div class="main">
+       <%= render 'layouts/messages' %>       
        <%= yield %>
-    </main>
+    </div>
       <%= render 'layouts/footer' %>
 
       <!-- Matomo -->

@@ -9,7 +9,7 @@
   .category {
     img {
       height: 150px;
-      width: 275px;
+      width: 289px;
       margin: 0 16px 16px 0;
     }
     &:last-child {
@@ -18,6 +18,10 @@
       }
     }
   }
+}
+.home {
+  max-width: $content-width;
+  margin: 0 auto;
 }
 .featured-stores {
   .heading-text {
