@@ -7,7 +7,6 @@
 	.container {
 		max-width: $content-width;
 		.shopmatic-world {
-			height: 30px;
 			width: 206px;
 			color: #FFFFFF;
 			font-size: 30px;
@@ -20,6 +19,8 @@
 		}
 		.search-bar {
 			width: 504px;
+			left: 12%;
+			position: relative;
 			input {
 				height: 45px;
 				border: none;
@@ -40,6 +41,10 @@
 				color: #fff;
 				z-index: 999;
 				cursor: pointer;
+			}
+			@include small-mobile {
+				position: inherit;
+				margin: 5px 0;
 			}
 		}
 		.start-shop {

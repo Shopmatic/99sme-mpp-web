@@ -6,6 +6,10 @@
 .category-block {
   display: flex;
   margin-top: 27px;
+  @include small-mobile {
+    display: block;
+    text-align: center;
+  }
   .category {
     img {
       height: 150px;
@@ -24,6 +28,10 @@
   margin: 0 auto;
 }
 .featured-stores {
+  @include small-mobile {
+    display: block;
+    margin: 0 15px;
+  }
   .heading-text {
     color: #000000;
     font-size: 26px;
@@ -67,7 +75,7 @@
     img {
       margin-bottom: 16px;
       border-radius: $image-radius;
-      height: 269px;
+      height: 276px;
       margin-left: auto;
       margin-right: auto;
       display: block;
