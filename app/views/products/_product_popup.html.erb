@@ -5,7 +5,9 @@
       <button type="button" class="close" data-dismiss="modal">&times;</button>
       <div class="row">
         <div class="left-section col-md-6">
-          <img class="primary-img" alt="img" src="<%= product.image_1%>" />
+          <span id='span-<%= product.id%>' class="zoom">
+            <img id='product-<%= product.id%>' class="primary-img" alt="img" src="<%= product.image_1%>" />
+          </span>
           <div class="thumbnails">
             <img alt="" src="<%=(!(product.image_1.blank?) && (product.image_1.include? "cdn.myshopmatic.com"))  ? product.image_1.sub(/(.*)\b.\b/i, '\1_s.') : product.image_1%>" width="70">
             <img alt="" src="<%=(!(product.image_2.blank?) && (product.image_2.include? "cdn.myshopmatic.com"))  ? product.image_2.sub(/(.*)\b.\b/i, '\1_s.') : product.image_2%>" width="70">
@@ -37,7 +39,9 @@
   </div>
 </div>
 
-<%= javascript_tag do %>
-  console.log('working')
+<%= javascript_tag do %>  
+  $(document).ready(function() {
+    $('#span-<%= product.id%>').zoom(); 
+  });
 <% end %>
   

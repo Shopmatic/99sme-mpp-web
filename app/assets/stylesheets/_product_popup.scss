@@ -7,7 +7,12 @@
       .primary-img {
         width: 100%;
         border-radius: 5px;
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);        
+      }
+      .zoomImg {
+        &:hover {
+          cursor: zoom-in;
+        }
       }
       .thumbnails {
         margin-top: 10px;
@@ -82,3 +87,14 @@
     opacity: 10;
   }
 }
+
+.zoom {
+  display:inline-block;
+  position: relative;
+}
+
+.zoom img {
+  display: block;
+}
+
+.zoom img::selection { background-color: transparent; }
