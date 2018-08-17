@@ -7,7 +7,7 @@
     </div>
   </div>
   <div class="about-us">
-    <p><%=@merchant.site_about_us%></p>
+    <p><%= (@merchant.story.blank?) ? @merchant.site_about_us : @merchant.story.html_safe %></p>
     <button class="visit-store"><a target="_blank" href="https://<%=@merchant.canonical_name%>.myshopmatic.com/">Contact Store</a></button>
   </div>
 </header>
