@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .store {
+  max-width: $content-width;
+  margin: 0 auto;
   .products {
     .product {
       width: 270px;

@@ -1,99 +1,73 @@
-<div id="store-carousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#store-carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#store-carousel" data-slide-to="1"></li>
-    <li data-target="#store-carousel" data-slide-to="2"></li>
-  </ul>
-  
-  <!-- The slideshow -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://cdn.myshopmatic.com/images/2QJYW6/lRjmL7q6jr.png" alt="The Local Book Hoarders" />
+<%= render 'layouts/home_carousel' %>
+<div class="home">  
+  <section class="category-block">
+    <a href="store/apluso" class="category">
+      <img src="assets/img/clothing.png" alt="clothing" />
+    </a>
+    <a href="store/madihajaipur" class="category">
+      <img src="assets/img/jewellery.png" alt="jewellery" />
+    </a>
+    <a href="store/wealdheritage" class="category">
+      <img src="assets/img/decor.png" alt="decor" />
+    </a>
+    <a href="store/wealdheritage" class="category">
+      <img src="assets/img/arts.png" alt="arts" />
+    </a>
+  </section>
+  <section class="featured-stores">
+    <p class="heading-text">Featured Stores</p>
+    <div class="row">
+      <div class="left-section col-md-6">
+        <a href="store/thelocalbookhoarders">
+          <div class="primary-store">
+            <img src="https://cdn.myshopmatic.com/images/2QJYW6/v8Z3oKRgNn.jpg" alt="The Local Book Hoarders" />
+            <p class="name">The Local Book Hoarders</p>
+            <p class="desc">Buy preloved books curated by book lovers who cherish the feel of an actual book</p>
+          </div>
+        </a>
+      </div>
+      <div class="right-section col-md-6">
+        <div class="first row">
+          <div class="col-md-6">
+            <a href="store/woodsandpetals">
+              <div class="secondary-store">
+                <img src="https://cdn.myshopmatic.com/images/MPN8LK/r2R968y6Rk_m.jpg" alt="Woods and Petals" />
+                <p class="name">Woods and Petals</p>
+                <p class="desc">We encourage you to think where your consumables come from.</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="store/apluso">
+              <div class="secondary-store">
+                <img src="https://s3-sg-apps-temp.s3-ap-southeast-1.amazonaws.com/images/GL9WNY/KLWvrZKKQl" alt="APlusO" />
+                <p class="name">APlusO</p>
+                <p class="desc">Lifestyle brand carefully curated and dedicated for the little ones</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="second row">
+          <div class="col-md-6">
+            <a href="store/madihajaipur">
+              <div class="secondary-store">
+                <img src="https://cdn.myshopmatic.com/images/2JJWQZ/J8JRr9Wplo_m.jpg" alt="Madiha Jaipur" />
+                <p class="name">Madiha Jaipur</p>
+                <p class="desc">Madiha Jaipur brings to life pieces that are refined and playful.</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="store/wealdheritage">
+              <div class="secondary-store">
+                <img src="https://s3-sg-apps-temp.s3-ap-southeast-1.amazonaws.com/images/08V46Z/oy2zrADPAj_jZExkgD.jpg" />
+                <p class="name">Weald Heritage</p>
+                <p class="desc">It bring some interesting and antique products for almost every purpose.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="https://cdn.myshopmatic.com/images/MPN8LK/wrNGrXAnRz.png" alt="Woods and Petals" />
-    </div>
-    <div class="carousel-item">
-      <img src="https://cdn.myshopmatic.com/images/GL9WNY/x1nlyJjMYB.png" alt="APlusO" />
-    </div>
-  </div>
-  
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#store-carousel" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#store-carousel" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
+  </section>
 </div>
-<section class="category-block">
-  <a href="store/apluso" class="category">
-    <img src="assets/img/clothing.png" alt="clothing" />
-  </a>
-  <a href="store/madihajaipur" class="category">
-    <img src="assets/img/jewellery.png" alt="jewellery" />
-  </a>
-  <a href="store/wealdheritage" class="category">
-    <img src="assets/img/decor.png" alt="decor" />
-  </a>
-  <a href="store/wealdheritage" class="category">
-    <img src="assets/img/arts.png" alt="arts" />
-  </a>
-</section>
-<section class="featured-stores">
-  <p class="heading-text">Featured Stores</p>
-  <div class="row">
-    <div class="left-section col-md-6">
-      <a href="store/thelocalbookhoarders">
-        <div class="primary-store">
-          <img src="https://cdn.myshopmatic.com/images/2QJYW6/v8Z3oKRgNn.jpg" alt="The Local Book Hoarders" />
-          <p class="name">The Local Book Hoarders</p>
-          <p class="desc">Buy preloved books curated by book lovers who cherish the feel of an actual book</p>
-        </div>
-      </a>
-    </div>
-    <div class="right-section col-md-6">
-      <div class="first row">
-        <div class="col-md-6">
-          <a href="store/woodsandpetals">
-            <div class="secondary-store">
-              <img src="https://cdn.myshopmatic.com/images/MPN8LK/r2R968y6Rk_m.jpg" alt="Woods and Petals" />
-              <p class="name">Woods and Petals</p>
-              <p class="desc">We encourage you to think where your consumables come from.</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-6">
-          <a href="store/apluso">
-            <div class="secondary-store">
-              <img src="https://s3-sg-apps-temp.s3-ap-southeast-1.amazonaws.com/images/GL9WNY/KLWvrZKKQl" alt="APlusO" />
-              <p class="name">APlusO</p>
-              <p class="desc">Lifestyle brand carefully curated and dedicated for the little ones</p>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="second row">
-        <div class="col-md-6">
-          <a href="store/madihajaipur">
-            <div class="secondary-store">
-              <img src="https://cdn.myshopmatic.com/images/2JJWQZ/J8JRr9Wplo_m.jpg" alt="Madiha Jaipur" />
-              <p class="name">Madiha Jaipur</p>
-              <p class="desc">Madiha Jaipur brings to life pieces that are refined and playful.</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-6">
-          <a href="store/wealdheritage">
-            <div class="secondary-store">
-              <img src="https://s3-sg-apps-temp.s3-ap-southeast-1.amazonaws.com/images/08V46Z/oy2zrADPAj_jZExkgD.jpg" />
-              <p class="name">Weald Heritage</p>
-              <p class="desc">It bring some interesting and antique products for almost every purpose.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
