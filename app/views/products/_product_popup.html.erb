@@ -2,7 +2,7 @@
 <div class="modal fade" id='product-<%= product.id%>'>
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <button id='close-<%= product.id%>' type="button" class="close" data-dismiss="modal">&times;</button>
       <div class="row">
         <div class="left-section col-md-6">
           <span id='span-<%= product.id%>' class="zoom">
@@ -39,7 +39,12 @@
 
 <%= javascript_tag do %>  
   $(document).ready(function() {
-    $('#span-<%= product.id%>').zoom(); 
+    $('#span-<%= product.id%>').zoom();     
+    $(this).keydown(function(event){
+      if (event.keyCode == 27) { 
+        $('#close-<%= product.id%>').click();
+      }
+    });
   });
 <% end %>
   
