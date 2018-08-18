@@ -1,7 +1,9 @@
-.carousel {
-  height: 300px;
-  overflow: hidden;
-  text-align: center;
+.home-carousel {
+  .carousel {
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
+  }
 }
 .category-block {
   display: flex;

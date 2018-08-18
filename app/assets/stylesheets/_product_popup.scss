@@ -9,9 +9,6 @@
         border-radius: 5px;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);        
       }
-      .zoom {
-        display: inline-block;
-      }
       .zoomImg {
         &:hover {
           cursor: zoom-in;
@@ -95,4 +92,30 @@
     opacity: 10;
     font-size: 30px;
   }
+}
+
+//popup carousel
+
+ .carousel-indicators {
+  display: block;
+  margin: 10px 0;
+  position: static;
+  left: initial;
+  width: initial;
+  margin-left: initial;
+  img {
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid #ededed;
+  }
+}
+
+ .carousel-indicators > li {
+  width: initial;
+  height: initial;
+  text-indent: initial;
+}
+
+ .carousel-indicators > li.active img {
+  opacity: 0.7;
 }
