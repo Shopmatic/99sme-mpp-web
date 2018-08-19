@@ -7,7 +7,7 @@
 }
 .category-block {
   display: flex;
-  margin-top: 27px;
+  margin: 27px auto 0;
   @include small-mobile {
     display: block;
     text-align: center;
@@ -15,7 +15,7 @@
   .category {
     img {
       height: 150px;
-      width: 289px;
+      width: 282px;
       margin: 0 16px 16px 0;
     }
     &:last-child {
@@ -30,6 +30,7 @@
   margin: 0 auto;
 }
 .featured-stores {
+  margin: 0;
   @include small-mobile {
     display: block;
     margin: 0 15px;
