@@ -6,7 +6,7 @@
     <div class="col-md-3">
       <%= link_to "/redirect_to_store.html?url=https://#{@merchant.canonical_name}.myshopmatic.com/products/#{p.slug}&store=#{@merchant.name}", :target => "_blank" do%>      
         <div class="product" data-toggle="modal" data-target="#product-<%= p.id %>">
-          <img alt="img" src="<%=(p.image_1.include? "cdn.myshopmatic.com")  ? p.image_1.sub(/(.*)\b.\b/i, '\1_m.') : p.image_1%>" />
+          <img alt="img" src="<%= p_image(p.image_1) %>" />
           <p class="name"><%=p.name%></p>
           <p class="price"> <%=@merchant.currency_code%> <%=p.price%></p>
         </div>
