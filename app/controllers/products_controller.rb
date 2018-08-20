@@ -16,10 +16,13 @@ class ProductsController < ApplicationController
   end
 
   def details
-    @product =  Products.first
+    render_404 and return if params[:id].blank?
+    product_id = params[:id]
+    @product =  Products.find(product_id)
+    @merchant =  Merchants.find(@product.merchant_id)
 
      respond_to do | format |
-      format.html {render :partial => 'products/product_popup'}
+      format.html {render :partial => 'products/product_detail'}
      end 
 
   end
