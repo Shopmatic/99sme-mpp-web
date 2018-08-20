@@ -7,16 +7,10 @@
         <div class="left-section col-md-6">
           <div id='myCarousel-<%= @product.id%>' class="carousel slide">
             <div class="carousel-inner">
-                <div class="active item carousel-item" data-slide-number="0">
-                  <div id='first-<%= @product.id%>'>
-                    <img  class="img-fluid" alt="" src="<%=!(@product.image_1.blank?)  ? @product.image_1 : 'http://placehold.it/600x600'%>">
-                  </div>
-                </div>
-                <div class="item carousel-item" data-slide-number="1">
-                  <div id='second-<%= @product.id%>'>
-                    <img  class="img-fluid" alt="" src="<%=!(@product.image_2.blank?)  ? @product.image_2 : 'http://placehold.it/600x600'%>">
-                  </div>
-                </div>
+              <%= product_image(product, product.image_1, "0", "first", "active" ).html_safe %>
+              <%= product_image(product, product.image_2, "1", "second", "" ).html_safe %>
+              <%= product_image(product, product.image_3, "2", "third", "" ).html_safe %>
+              <%= product_image(product, product.image_4, "3", "fourth", "" ).html_safe %>
             </div>
             <ul class="carousel-indicators list-inline">
                 <li class="list-inline-item active">
