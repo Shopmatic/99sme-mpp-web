@@ -4,7 +4,7 @@ module ProductsHelper
     html = <<-PRODUCT_IMAGES
     <div class="#{active} item carousel-item" data-slide-number="#{order_no}">
       <div id='#{order}-#{product.id}'>
-      <img  class="img-fluid" alt="" src="#{!(image.blank?)  ? image : 'http://placehold.it/600x600'}">
+      <img  class="img-fluid" alt="#{product.name}" src="#{!(image.blank?)  ? image : 'http://placehold.it/600x600'}">
       </div>
     </div>
     PRODUCT_IMAGES
@@ -15,8 +15,7 @@ module ProductsHelper
     html = <<-PRODUCT_IMAGES
       <li class="list-inline-item #{active}">
         <a id="carousel-selector-#{order_no}" class="selected" data-slide-to="#{order_no}" data-target='#myCarousel-#{product.id}'>
-          <img  class="img-fluid" alt="" 
-              src="#{(!(image.blank?) && (image.include? "cdn.myshopmatic.com"))  ? image.sub(/(.*)\b.\b/i, '\1_s.') : image}" width="80">
+          <img  class="img-fluid" alt="#{product.name}" src="#{(!(image.blank?) && (image.include? "cdn.myshopmatic.com"))  ? image.sub(/(.*)\b.\b/i, '\1_s.') : image}" width="80">
         </a>
       </li>
     PRODUCT_IMAGES
