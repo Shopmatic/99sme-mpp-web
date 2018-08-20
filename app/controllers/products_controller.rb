@@ -20,10 +20,9 @@ class ProductsController < ApplicationController
     product_id = params[:id]
     @product =  Products.find(product_id)
     @merchant =  Merchants.find(@product.merchant_id)
-
-     respond_to do | format |
+    respond_to do |format|
       format.html {render :partial => 'products/product_detail'}
-     end 
-
+      format.json  { render :json => { :product => @product, :merchant => @merchant} }
+    end
   end
 end
