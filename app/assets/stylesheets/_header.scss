@@ -45,12 +45,18 @@ header {
 			text-shadow: 0 1px 4px 0 rgba(0,0,0,0.29);
 			margin: 15px;
 		}
+		.contact-info {
+			p {
+				margin: 0;
+			}
+		}
 		.visit-store {
 			height: 40px;
 			border: none;
 			border-radius: 5px;
 			padding: 8px 16px;
 			background-color: $primary-color;
+			margin-top: 10px;
 			cursor: pointer;
 			&:hover {
 				transition: 0.25s !important;
