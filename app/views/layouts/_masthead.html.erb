@@ -7,7 +7,12 @@
     </div>
   </div>
   <div class="about-us">
-    <p><%= (@merchant.story.blank?) ? @merchant.site_about_us : @merchant.story.html_safe %></p>
-    <button class="visit-store"><a target="_blank" href="https://<%=@merchant.canonical_name%>.myshopmatic.com/">Contact Store</a></button>
+      <p><%= (@merchant.story.blank?) ? @merchant.site_about_us : @merchant.story.html_safe %></p>  
+      <div class="contact-info">
+        <% @merchant.site_contact_us.keys.each do |key| %>
+          <p><%= @merchant.site_contact_us[key]%></p>
+        <% end %>
+        <button class="visit-store"><a target="_blank" href="https://<%=@merchant.canonical_name%>.myshopmatic.com/">Contact Store</a></button>
+      </div>
   </div>
 </header>
