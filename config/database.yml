@@ -14,10 +14,10 @@
 #
 development:
   adapter:  postgresql
-  host:     localhost
+  host:     dev.goshopmatic.com
   port:     5432
   encoding: unicode
-  database: shopmaticworld
+  database: shopmatic-world
   pool:     5
   username: shopmaticworld
   password: shopmaticworld

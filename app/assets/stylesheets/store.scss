@@ -5,47 +5,8 @@
   max-width: $content-width;
   margin: 0 auto;
   .products {
-    .product {
-      width: 270px;
-      border-radius: 5px;
-      background-color: #FFFFFF;
-      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
-      margin: 0 0 27px;
-      padding-bottom: 1px;
-      @include small-mobile {
-        width: auto;
-        margin: 10px;
-      }
-      cursor: pointer;
-      &:hover {
-        box-shadow: 0 18px 30px rgba(0,0,0,0.15), 0 0 14px rgba(0,0,0,0.02), 0 0 1px rgba(0,0,0,0.1);
-        opacity: .95;
-      }
-      img {
-        margin-bottom: 16px;
-        border-radius: $image-radius;
-        height: 270px;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-      }
-      .name {
-        color: #444444;
-        font-size: 15px;
-        line-height: 18px;
-        text-shadow: 0 1px 4px 0 rgba(0,0,0,0.29);        
-        margin-bottom: 10px;
-        padding: 0 16px;
-      }
-      .price {
-        color: #000000;
-        font-size: 17px;
-        font-weight: 500;
-        line-height: 22px;
-        text-shadow: 0 1px 4px 0 rgba(0,0,0,0.29);
-        padding: 0 16px;
-      }
-    }
+    @import 'common/mixins/singleProduct';
+    @include singleProduct;
   }
 }
 @import "product_popup";
