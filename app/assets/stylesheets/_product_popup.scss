@@ -45,6 +45,17 @@
         line-height: 24px;
         text-shadow: 0 1px 4px 0 rgba(0,0,0,0.29);
       }
+      .shipping-info {
+        color: #555555;
+        font-size: 16px;
+        p {
+          margin: 0;
+          .key {
+            font-weight: 500;
+          }
+        }
+        
+      }
       .quantity {
         height: 24px;
         width: 49px;
@@ -53,6 +64,7 @@
         line-height: 24px;
       }
       .price-block {
+        margin: 15px 0px;
         display: flex;        
         input {
           height: 40px;
@@ -67,7 +79,7 @@
         }
         .buy-btn {
           height: 40px;
-          width: 102px;
+          width: 125px;
           border-radius: 5px;
           background-color: $primary-color;
           color: #fff;
@@ -83,6 +95,13 @@
         }
       }      
     }
+    .you-may-also-like {
+      margin: 35px 0 15px 0px;
+      color: #555555; 
+      font-size: 20px;
+    }
+    @import 'common/mixins/singleProduct';
+    @include singleProduct;
   }
   .close {
     position: absolute;

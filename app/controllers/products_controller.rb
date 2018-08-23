@@ -20,6 +20,8 @@ class ProductsController < ApplicationController
     product_id = params[:id]
     @product =  Products.find(product_id)
     @merchant =  Merchants.find(@product.merchant_id)
+    @you_might_like_products = Products.where({ :merchant_id=> @product.merchant_id} ).slice(5, 4)
+
     respond_to do |format|
       format.html {render :partial => 'products/product_detail'}
       format.json  { render :json => { :product => @product, :merchant => @merchant} }
