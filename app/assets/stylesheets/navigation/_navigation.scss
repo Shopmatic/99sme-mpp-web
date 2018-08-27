@@ -47,6 +47,20 @@
 				position: inherit;
 				margin: 5px 0;
 			}
+			ul {
+				display: none;
+				position: absolute;
+				z-index: 999;
+				background: #fff;
+				width: 505px;
+				border-radius: 4px;
+				box-shadow: 0 2px 7px 0 rgba(0,0,0,0.12);
+				list-style-type: none;
+				padding: 10px;
+				li {
+					padding: 5px 10px;
+				}
+			}
 		}
 		.start-shop {
 			height: 21px;

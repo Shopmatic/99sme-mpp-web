@@ -1,0 +1,41 @@
+.search {
+  max-width: $content-width;
+  margin: 0 auto;
+  p {
+    color: #000000;
+    font-size: 22px;
+    line-height: 24px;
+    text-shadow: 0 1px 4px 0 rgba(0,0,0,0.29);
+    margin: 20px 0;
+    .query-text {
+      font-weight: 500;
+    }
+  }
+  ul {
+    li {
+      list-style-type: none;      
+      a {
+        color: #000000;
+        font-size: 14px;
+        line-height: 24px;
+        text-shadow: 0 1px 4px 0 rgba(0,0,0,0.29);        
+      }
+      a.active {
+        font-weight: bold;
+        padding: 5px 0;
+        border-bottom: 2px solid $primary-color;
+      }
+    }
+    .stores {
+      margin-left: 10px;
+    }
+  }
+  .products {
+    @import 'common/mixins/singleProduct';
+    @include singleProduct;
+  }
+  .stores {
+    @import 'common/mixins/secondaryStoreBlock';
+    @include secondaryStoreBlock;
+  }
+}
