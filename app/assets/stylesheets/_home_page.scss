@@ -43,69 +43,11 @@
     text-shadow: 0 1px 4px 0 #8FB8B8;
   }
   .left-section {
-    .primary-store {      
-      border-radius: 5px;
-      background-color: #FFFFFF;
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-      margin: 0 0 27px;
-      padding-bottom: 1px;
-      cursor: pointer;
-      &:hover {
-        box-shadow: 0 18px 30px rgba(0, 0, 0, 0.15), 0 0 14px rgba(0, 0, 0, 0.02), 0 0 1px rgba(0, 0, 0, 0.1);        
-      }
-      img {
-        margin-bottom: 27px;
-        border-radius: $image-radius;
-      }
-      .name {
-        color: #000000;
-        font-size: 42px;
-        font-weight: 300;
-        letter-spacing: -0.8px;
-        text-shadow: 0 1px 4px 0 rgba(0,0,0,0.29);
-        margin: 0px 25px 0;
-      }
-      .desc {
-        color: #7F7F7F;
-        font-size: 20px;
-        text-shadow: 0 1px 4px 0 rgba(0,0,0,0.29);
-        margin: 0px 25px 32px;
-      }
-    }    
+    @import 'common/mixins/primaryStoreBlock';
+    @include primaryStoreBlock;
   }
   .right-section {
-    img {
-      margin-bottom: 16px;
-      border-radius: $image-radius;
-      height: 269px;
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-    }
-    .secondary-store {
-      border-radius: 5px;
-      background-color: #FFFFFF;
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-      margin: 0 0 27px;
-      padding-bottom: 1px;
-      &:hover {
-        box-shadow: 0 18px 30px rgba(0, 0, 0, 0.15), 0 0 14px rgba(0, 0, 0, 0.02), 0 0 1px rgba(0, 0, 0, 0.1);        
-      }
-      .name {
-        margin: 0 16px 5px;
-        color: #000000;
-        font-size: 20px;
-        line-height: 22px;
-        text-shadow: 0 1px 4px 0 rgba(0,0,0,0.29);
-      }
-      .desc {
-        margin: 0 16px;
-        margin-bottom: 16px;
-        color: #7F7F7F;
-        font-size: 15px;
-        line-height: 18px;
-        text-shadow: 0 1px 4px 0 rgba(0,0,0,0.29);
-      }
-    }
+    @import 'common/mixins/secondaryStoreBlock';
+    @include secondaryStoreBlock;
   }
 }
